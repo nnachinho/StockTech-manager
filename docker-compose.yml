@@ -1,0 +1,12 @@
+services:
+ data_base:
+   image: postgres:17
+   environment:
+    POSTGRES_USER: stockTechUser
+    POSTGRES_PASSWORD: mipassword
+    POSTGRES_DB: stockTechDB
+   volumes:
+    - datos_stockTech:/var/lib/postgresql/data
+
+volumes:
+  datos_stockTech:
